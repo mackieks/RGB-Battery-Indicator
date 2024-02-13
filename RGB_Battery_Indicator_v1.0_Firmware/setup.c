@@ -107,8 +107,10 @@ int adc_read(uint8_t pin, uint8_t reference) {
 // Setup the AVR
 void setup(void) {
 	// Set RGB outputs and all off
-	DDRB |= (1<<PB2) | (1<<PB1) | (1<<PB0);
-	PORTB |= (1<<PB2) | (1<<PB1) | (1<<PB0);
+
+	// This sets GPIO direction (input or output)
+	// DDRB |= (1<<PB2) | (1<<PB1) | (1<<PB0);
+	// PORTB |= (1<<PB2) | (1<<PB1) | (1<<PB0);
 	
 	// Wait a bit
 	_delay_ms(250);
