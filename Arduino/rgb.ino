@@ -11,7 +11,7 @@
 
 void setup(){ // runs once when the microcontroller powers up
 
-	pinMode(LED_RED, OUTPUT);
+    pinMode(LED_RED, OUTPUT);
     pinMode(LED_GREEN, OUTPUT);
     pinMode(LED_BLUE, OUTPUT);
 
